@@ -80,38 +80,19 @@ export default function Header() {
       {isOpen && (
         <div className="mobile-panel md:hidden">
 
-          <Link
-            to="/"
-            onClick={() => setIsOpen(false)}
-            className="mobile-link"
-          >
+          <Link to="/" onClick={() => setIsOpen(false)} className="mobile-link">
             Inicio
           </Link>
 
-          <Link
-            to="/servicios"
-            onClick={() => setIsOpen(false)}
-            className="mobile-link"
-          >
+          <Link to="/servicios" onClick={() => setIsOpen(false)} className="mobile-link">
             Servicios
           </Link>
 
-          <Link
-            to="/precios"
-            onClick={() => setIsOpen(false)}
-            className="mobile-link"
-          >
+          <Link to="/precios" onClick={() => setIsOpen(false)} className="mobile-link">
             Precios
           </Link>
 
-          <Link
-            to="/contacto"
-            onClick={() => setIsOpen(false)}
-            className="mobile-link"
-          >
-            Contacto
-          </Link>
-
+          {/* Submenú móvil */}
           <details>
             <summary className="mobile-link">Ejemplos</summary>
             <a
