@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =========================================
+   ESTILOS GLOBALES HAZTEONLINE
+   Incluye 4 temas dinámicos para el ThemeToggle
+   y una base visual profesional
+========================================= */
+
+/* Transiciones suaves al cambiar de tema */
+:root,
+[data-theme] {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* =========================================
+   TEMA A — AZUL PROFESIONAL (Recomendado)
+========================================= */
+[data-theme="temaA"] {
+  --bg: #0a1a2f;
+  --text: #ffffff;
+  --accent: #4dbbff;
+
+  --grad-start: #0a1a2f;
+  --grad-end: #11486c;
+
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* =========================================
+   TEMA B — VIOLETA DIGITAL / AGENCIA CREATIVA
+========================================= */
+[data-theme="temaB"] {
+  --bg: #1e0b36;
+  --text: #f7f2ff;
+  --accent: #a855f7;
+
+  --grad-start: #1e0b36;
+  --grad-end: #3c1b64;
+
+  --card-bg: rgba(255, 255, 255, 0.06);
+  --border-color: rgba(255, 255, 255, 0.15);
+}
+
+/* =========================================
+   TEMA C — MINIMALISTA OSCURO/LIGHT TECH
+========================================= */
+[data-theme="temaC"] {
+  --bg: #0f0f0f;
+  --text: #e5e5e5;
+  --accent: #89c4ff;
+
+  --grad-start: #0f0f0f;
+  --grad-end: #1f1f1f;
+
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* =========================================
+   TEMA D — “CYAN TECH” (opcional futurista)
+========================================= */
+[data-theme="temaD"] {
+  --bg: #001f29;
+  --text: #dbfaff;
+  --accent: #00eaff;
+
+  --grad-start: #001f29;
+  --grad-end: #003b47;
+
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* =========================================
+   ESTILOS BASE
+========================================= */
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', sans-serif;
+}
+
+/* Mejoras en scroll */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--accent);
+  border-radius: 8px;
+}
+
+/* Tarjetas globales */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 1.25rem;
+}
+
+/* Links */
+a {
+  transition: 0.25s ease;
+}
+a:hover {
+  color: var(--accent);
+}
+
+/* Títulos */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+}

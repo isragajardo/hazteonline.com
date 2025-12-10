@@ -1,0 +1,101 @@
+/* =========================================
+   PRICING — Estilo premium tipo SaaS
+========================================= */
+
+.pricing-section {
+  padding: 4rem 1.5rem;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.pricing-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.pricing-title {
+  font-size: 2.3rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-subtitle {
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 3rem;
+}
+
+.pricing-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 900px) {
+  .pricing-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* CARD */
+
+.price-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 1rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: 0.35s ease;
+  backdrop-filter: blur(10px);
+}
+
+.price-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-6px);
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.32);
+}
+
+.price-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.price-amount {
+  font-size: 1.9rem;
+  margin: 0.6rem 0 0.4rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.price-description {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin-bottom: 1.5rem;
+}
+
+.price-features {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 2rem;
+  text-align: left;
+}
+
+.price-features li {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border-color);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.price-btn {
+  display: block;
+  padding: 0.75rem 1rem;
+  border-radius: 0.7rem;
+  font-weight: 600;
+  background: var(--accent);
+  color: white;
+  transition: 0.3s ease;
+}
+
+.price-btn:hover {
+  filter: brightness(1.15);
+}
